@@ -18,3 +18,6 @@ As soon as a DHCP Discover message is received, instead of processing the reques
 = Conclustion =
 
 = Variations =
+  * Unicast the reply rather than broadcast potentially quicker
+  * Offer the client the same details as a dhcp server already on the network
+    * taking this further, rouge server can masquerade as server on network, by presending its own dhcp discover message, thus gathering the servers mac address and ip. the rouge serve can now spoof the mac and ip address of the actual server, thus fooling the client into thinking that this is the server its used to configuring with.
