@@ -1,0 +1,19 @@
+-revise dhcputility.bytestoint(), consider using bitset instead
+-revise flags field in dhcp message, send unicast or broadcast
+
+-When allocating a new address,
+      servers SHOULD check that the offered network address is not
+
+      already in use; e.g., the server may probe the offered address
+      with an ICMP Echo Request.  Servers SHOULD be implemented so that
+      network administrators MAY choose to disable probes of newly
+      allocated addresses. 
+
+- revise dhcpmessage request and discover messages templates
+
+-revise bitset size calculation... could be wrong
+ (change bitsets to left is least sig bit for calculations then output bytes as right most sig)
+
+
+-change assign ip to assign using bitset functions for efficency
+
